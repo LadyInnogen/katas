@@ -12,7 +12,5 @@ function reverse(message){
 
 console.log("Secret Message: ", reverse(messageToReverse));
 
-module.exports = {
-	reverse: reverse
-};
+module.exports = reverse;
 
