@@ -1,7 +1,4 @@
-
-let messageToReverse = "Call me Ishmael";
-
-function reverse(message){
+let reverse = function reverse(message){
 	let reversedMessage = "";
 	for(let i=1; i<=message.length; i++){
 		//Each iteration, grab each letter from the end to the beginning
@@ -10,7 +7,7 @@ function reverse(message){
 	return reversedMessage;
 };
 
-console.log("Secret Message: ", reverse(messageToReverse));
-
-module.exports = reverse;
+module.exports = {
+	reverse: reverse
+};
 
