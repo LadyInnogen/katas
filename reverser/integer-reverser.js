@@ -16,7 +16,7 @@ function reverseInteger(signedInteger){
 		reversedNumber = stringReverser.reverse(numberToReverse);
 	}
 
-	return reversedNumber;
+	return parseInt(reversedNumber);
 }
 
 console.log(positiveNumber, " reversed is ", reverseInteger(positiveNumber));
