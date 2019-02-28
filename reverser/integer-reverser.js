@@ -1,11 +1,19 @@
-const reverse = require('./string-reverser');
+const stringReverser = require('./string-reverser');
 
 let positiveNumber = 5328409;
 let negativeNumber = -4321;
 
 function reverseInteger(signedInteger){
 	let numberToReverse = signedInteger + "";
-	let reversedNumber = reverse(numberToReverse);
+	let reversedNumber;
+
+	if(signedInteger < 0 ){
+		unsignedNumberToReverse = numberToReverse.substring(1);
+		reversedNumber = "-"+stringReverser.reverse(unsignedNumberToReverse);
+	} else {
+		reversedNumber = stringReverser.reverse(numberToReverse);
+	}
+
 	return reversedNumber;
 }
 
